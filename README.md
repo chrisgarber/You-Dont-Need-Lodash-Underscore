@@ -390,7 +390,7 @@ Returns the first element of an array. Passing n will return the first n element
   // => 1
 
   // Native (works even with potentially undefined/null, like _.first)
-  [].concat(undefined).shift()
+  (value || [])[0]
   // => undefined
 
   [1, 2, 3, 4, 5].slice(0, 2);
